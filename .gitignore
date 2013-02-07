@@ -1,6 +1,4 @@
 .DS_Store
 /.vagrant
 /tmp
-/encrypted_data_bag_secret
 /cookbooks
-.rvmrc

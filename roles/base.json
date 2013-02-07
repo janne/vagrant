@@ -10,6 +10,7 @@
     "recipe[git]",
     "recipe[dotfiles]",
     "recipe[dotvim]",
-    "recipe[screen]"
+    "recipe[screen]",
+    "recipe[ruby1.9]"
   ]
 }

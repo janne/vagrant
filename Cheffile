@@ -5,3 +5,6 @@ cookbook 'apt'
 cookbook 'vim'
 cookbook 'git'
 cookbook 'screen'
+cookbook 'rbenv', :git => 'git@github.com:RiotGames/rbenv-cookbook.git'
+
+# vim: ft=ruby :

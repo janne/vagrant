@@ -11,6 +11,7 @@ SITE
       runit (<= 0.16.2)
       windows (>= 0.0.0)
       yum (>= 0.0.0)
+    ohai (1.1.6)
     runit (0.16.2)
     screen (0.8.0)
       build-essential (>= 0.0.0)
@@ -20,10 +21,21 @@ SITE
       chef_handler (>= 0.0.0)
     yum (2.1.0)
 
+GIT
+  remote: git@github.com:RiotGames/rbenv-cookbook.git
+  ref: master
+  sha: 4e1a1dd89f4599ea0fb98e04d42f77c1d333af78
+  specs:
+    rbenv (1.4.1)
+      build-essential (>= 0.0.0)
+      git (>= 0.0.0)
+      ohai (>= 1.1)
+
 DEPENDENCIES
   apt (>= 0)
   build-essential (>= 0)
   git (>= 0)
+  rbenv (>= 0)
   screen (>= 0)
   vim (>= 0)
 
