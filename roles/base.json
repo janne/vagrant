@@ -9,6 +9,7 @@
     "recipe[vim]",
     "recipe[git]",
     "recipe[dotfiles]",
-    "recipe[dotvim]"
+    "recipe[dotvim]",
+    "recipe[screen]"
   ]
 }
