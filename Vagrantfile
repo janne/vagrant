@@ -13,6 +13,8 @@ Vagrant::Config.run do |config|
   config.vm.share_folder "git", "git", ".."
 
   config.vm.provision :chef_solo do |chef|
+    config.vm.customize ["modifyvm", :id, "--memory", 1024]
+
     chef.cookbooks_path = [ "cookbooks", "site-cookbooks" ]
     chef.roles_path = "roles"
     chef.data_bags_path = "data_bags"
