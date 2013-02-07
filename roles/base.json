@@ -8,6 +8,7 @@
     "recipe[apt]",
     "recipe[vim]",
     "recipe[git]",
-    "recipe[dotfiles]"
+    "recipe[dotfiles]",
+    "recipe[dotvim]"
   ]
 }
