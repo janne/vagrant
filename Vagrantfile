@@ -17,7 +17,10 @@ Vagrant::Config.run do |config|
     chef.roles_path = "roles"
     chef.data_bags_path = "data_bags"
     chef.add_role "base"
-    # chef.json = { :mysql_password => "foo" }
+    chef.json = {
+      :name => "Jan Andersson",
+      :email => "jan.andersson@gmail.com"
+    }
   end
 end
 # vi: set ft=ruby :
