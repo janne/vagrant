@@ -7,6 +7,7 @@
     "recipe[build-essential]",
     "recipe[apt]",
     "recipe[vim]",
-    "recipe[git]"
+    "recipe[git]",
+    "recipe[dotfiles]"
   ]
 }
