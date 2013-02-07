@@ -1,0 +1,12 @@
+{
+  "name": "base",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "Base role",
+  "run_list": [
+    "recipe[build-essential]",
+    "recipe[apt]",
+    "recipe[vim]",
+    "recipe[git]"
+  ]
+}
