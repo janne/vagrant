@@ -17,7 +17,7 @@ script "clone_dotvim" do
       cd .vim
       git pull --rebase
     else
-      git clone git://github.com/janne/dotvim.git .vim
+      git clone git@github.com:janne/dotvim.git .vim
       git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
       ln -sf .vim/vimrc .vimrc
     fi
