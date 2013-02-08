@@ -21,5 +21,6 @@ script "clone_dotvim" do
       git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
       ln -sf .vim/vimrc .vimrc
     fi
+    exit 0
   EOH
 end
