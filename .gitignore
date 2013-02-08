@@ -4,3 +4,4 @@
 /cookbooks
 /.ruby-version
 /credentials.yml
+*.sw?
