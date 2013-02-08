@@ -10,6 +10,7 @@
 %w[.vim .vim/colors].each do |dir|
   directory "/home/vagrant/#{dir}" do
     owner "vagrant"
+    group "vagrant"
     mode 0755
   end
 end
@@ -17,12 +18,14 @@ end
 cookbook_file "/home/vagrant/.vimrc" do
   source "vimrc"
   owner "vagrant"
+  group "vagrant"
   mode 0644
 end
 
 cookbook_file "/home/vagrant/.vim/colors/desert256.vim" do
   source "desert256.vim"
   owner "vagrant"
+  group "vagrant"
   mode 0644
 end
 
