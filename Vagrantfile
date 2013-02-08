@@ -1,3 +1,5 @@
+require 'yaml'
+
 Vagrant::Config.run do |config|
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
@@ -19,10 +21,7 @@ Vagrant::Config.run do |config|
     chef.roles_path = "roles"
     chef.data_bags_path = "data_bags"
     chef.add_role "base"
-    chef.json = {
-      :name => "Jan Andersson",
-      :email => "jan.andersson@gmail.com"
-    }
+    chef.json = YAML.load_file 'credentials.yml'
   end
 end
 # vi: set ft=ruby :
