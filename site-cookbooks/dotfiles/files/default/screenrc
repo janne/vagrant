@@ -6,7 +6,8 @@ startup_message off
 
 # Handle 256 colors
 term "screen-256color"
-encoding UTF-8
+encoding utf8 utf8
+defencoding utf8
 
 # Status line
 hardstatus alwayslastline "%?%-Lw%?%n%% %f%t%?(%u)%?%?%+Lw%?%=%H | %d %M %c "
